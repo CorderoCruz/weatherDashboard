@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body{
+    display: block;
+}
+
 header {
     color: white;
     display: flex;
@@ -15,10 +19,12 @@ header {
 }
 
 h2 {
+    display: inline-block;
     font-size: 35px;
 }
 
 .left-body-section {
+    position: relative;
     margin-left: auto;
     display: inline-block;
     padding: 20px;
@@ -49,6 +55,11 @@ h2 {
     border-radius: 5px;
 }
 
+.logged-cities {
+    display: inline-block;
+
+}
+
 .past-searched-city {
     color: black;
     font-size: 15px;
@@ -60,3 +71,68 @@ h2 {
     border: 0;
     border-radius: 5px;
 }
+
+.right-body-section {
+    display: inline-block;
+    position: absolute; 
+    width: auto;
+    height: 700px;
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.cityNameStatus {
+    border: 1px solid black;
+    width: 1000px;
+    height: 300px;
+    padding-left: 20px;
+}
+
+.cityNameStatus > h3 {
+    padding-top: 20px;
+}
+
+.current_date {
+    display: inline-block;
+    width: auto;
+    margin-left: 20px;
+}
+
+.weather_symbol {
+    width: 26px;
+    background: red;
+}
+
+.five_day_forecast {
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 300px ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.five_day_cards {
+    margin-top: 20px;
+    height: 220px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 10px;
+
+}
+
+.five_day_cards div {
+    margin: 10px;
+    
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color:rgb(0, 132, 255);
+}
+
+.five_day_cards div h3, .five_day_cards div img {
+    margin-top: 15px;
+    color: white;
+    font-weight: 100;
+}
+
