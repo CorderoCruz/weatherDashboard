@@ -55,11 +55,14 @@ h2 {
     border-radius: 5px;
 }
 
-.logged-cities {
+.logged_cities {
     display: grid;
+    margin-top: 10px;
 }
 
-.past-searched-city {
+
+
+.past_searched_city {
     color: black;
     display: inline-block;
     font-size: 15px;
