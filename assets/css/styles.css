@@ -38,7 +38,7 @@ h2 {
     border-bottom: 1px solid black;
 }
 
-.searchCityInput {
+.search_city_input {
     margin-top: 10px;
     width: 300px;
     height: 40px;
@@ -56,18 +56,18 @@ h2 {
 }
 
 .logged-cities {
-    display: inline-block;
-
+    display: grid;
 }
 
 .past-searched-city {
     color: black;
+    display: inline-block;
     font-size: 15px;
     font-weight: bold;
     margin-top: 20px;
     width: 300px;
     height: 35px;
-    background-color: gray;
+    background-color: rgb(177, 176, 176);
     border: 0;
     border-radius: 5px;
 }
@@ -99,7 +99,7 @@ h2 {
 }
 
 .weather_symbol {
-    width: 26px;
+    width: 100px;
     background: red;
 }
 
