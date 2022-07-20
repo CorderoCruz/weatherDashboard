@@ -2,11 +2,6 @@ const searchBtn = document.querySelector(".searchBtn");
 
 const getData = function () {
     const cityNameInput = document.querySelector(".search_city_input").value;
-    const pastCitiesLog = document.querySelector(".logged_cities");
-    const pastCities = document.createElement("button");
-    pastCities.textContent = cityNameInput.toUpperCase();
-    pastCities.classList.add("past_searched_city");
-    pastCitiesLog.appendChild(pastCities);
     this.cityURL =
         cityURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityNameInput}&appid=51cc602a695be172598f1b878becb16e`;
 
@@ -140,7 +135,16 @@ const getData = function () {
                 }
                 convertData();
             }
+            //-----------------Logging Past Cities as buttons-------------------------
+            function getPastCityData() {
+                const pastCitiesLog = document.querySelector(".logged_cities");
+                const pastCities = document.createElement("button");
+                pastCities.textContent = cityNameInput.toUpperCase();
+                pastCities.classList.add("past_searched_city");
+                pastCitiesLog.appendChild(pastCities);
+            }
+            getPastCityData();
         });
 };
-
 searchBtn.addEventListener("click", getData);
+pastCities.addEventListener("click", getData);
