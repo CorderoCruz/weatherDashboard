@@ -21,3 +21,5 @@ There are some concepts I still do not understand like setting the local storage
 
 Some of the challenges I faced was converting the actual city name and converting that specific city name into GEO location i.e latitude and longitude
 I was looping through the API data when I wasnt supposed to because I already came back ready to use without having to loop through the data.
+
+I will continue to work on it as time goes by and I'm starting to grasp some of the concepts
