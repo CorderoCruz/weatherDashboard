@@ -3,7 +3,7 @@ const searchBtn = document.querySelector(".searchBtn");
 const getData = function () {
     const cityNameInput = document.querySelector(".search_city_input").value;
     this.cityURL =
-        cityURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityNameInput}&appid=51cc602a695be172598f1b878becb16e`;
+        cityURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityNameInput}&appid=51cc602a695be172598f1b878becb16e`;
 
     fetch(cityURL)
         .then((response) => {
@@ -147,4 +147,3 @@ const getData = function () {
         });
 };
 searchBtn.addEventListener("click", getData);
-pastCities.addEventListener("click", getData);
